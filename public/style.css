@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  
+  background-color: #f7f7f7;
+  padding:0;
+}
+#app {
+    max-width: 600px;
+    margin:50px auto;
+    padding:20px;
+    background-color: pink;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+ul {
+    list-style: none;
+    padding:0;
+}
+
+
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+li {
+  
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:  1px solid #ddd;
+}
+
+li button {
+  background-color: red;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.completed {
+  
+  color: black; /* dark grey for clarity */
+  position: relative;
+  padding-left: 25px; /* space for tick */
+  line-height: 1.5;
+}
+
+.completed::before {
+  content: '✔';
+  color: green;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 16px;
+}
+.overdue {
+  color: red;
+  font-weight: bold;
+}
+  
+
+
